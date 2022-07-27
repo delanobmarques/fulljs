@@ -8,13 +8,13 @@ import postRoutes from './routes/posts.js';
 //initialize app
 const app = express();
 
-//use express to connect routes to application - every route inside of postRoutes is going to start with post
-app.use('/posts', postRoutes)
-
 //general app setup - setting up body parser so app can send requests
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
+
+//use express to connect routes to application - every route inside of postRoutes is going to start with post
+app.use('/posts', postRoutes)
 
 //app database setup
 const CONNECTION_URL = 'mongodb+srv://memoriesapp:makingmemories@cluster0.d7txga9.mongodb.net/?retryWrites=true&w=majority';
