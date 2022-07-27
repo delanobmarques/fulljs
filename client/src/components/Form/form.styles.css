@@ -1,0 +1,23 @@
+.paper {
+    padding: 1rem;
+}
+
+.create-form {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.create-form .TextField {
+    margin: .5rem 0;
+}
+
+.create-form .fileInput {
+    width: 97%;
+    margin: 1rem 0;
+}
+
+.create-form .buttonSubmit {
+    margin-bottom: .75rem;
+}
